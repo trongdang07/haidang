@@ -1,9 +1,405 @@
+<!DOCTYPE html>
 <html>
+    <head>
+    
+        <meta charSet="utf-8"/>
+        <meta property="og:url" content="//thanhdieu.com"/>
+        <meta name="description" content="Trang chủ của HaiDang - Welome to the website.">
+        <meta name="author" content="Dangvippro">
+        <meta name="keywords" content="Dangvippro">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="shortcut icon" href="//i.imgur.com/LC5mbkf.jpg" type="image/x-icon">
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Welcome HaiDang &mdash; Profile Home"/>
+        <meta name="next-head-count" content="13"/>
+        <title>Hải Đăng | Thông Tin Thanh Toán</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/>
+        <link rel="stylesheet" href="./_static/css/theme.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="./_static/css/mother.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+</div>
 
-<body>
-  <h1>YOUR NAME</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+// CSS
+<style>
+  @-webkit-keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @-webkit-keyframes snowflakes-shake {
+    0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+    50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+  }
+  @keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @keyframes snowflakes-shake {
+    0%,100%{ transform:translateX(0)}
+    50% {transform:translateX(80px)}
+  }
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position:fixed;
+    top:-10%;
+    z-index:9999;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+    -webkit-animation-duration:10s,3s;
+    -webkit-animation-timing-function:linear,ease-in-out;
+    -webkit-animation-iteration-count:infinite,infinite;
+    -webkit-animation-play-state:running,running;
+    animation-name:snowflakes-fall,snowflakes-shake;
+    animation-duration:10s,3s;
+    animation-timing-function:linear,ease-in-out;
+    animation-iteration-count:infinite,infinite;
+    animation-play-state:running,running;
+  }
+  .snowflake:nth-of-type(0){
+    left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+  }
+  .snowflake:nth-of-type(1){
+    left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+  }
+  .snowflake:nth-of-type(2){
+    left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+  }
+  .snowflake:nth-of-type(3){
+    left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+  }
+  .snowflake:nth-of-type(4){
+    left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+  }
+  .snowflake:nth-of-type(5){
+    left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+  }
+  .snowflake:nth-of-type(6){
+    left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+  }
+  .snowflake:nth-of-type(7){
+    left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+  }
+  .snowflake:nth-of-type(8){
+    left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+  }
+  .snowflake:nth-of-type(9){
+    left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+  }
+  .snowflake:nth-of-type(10){
+    left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+  }
+  .snowflake:nth-of-type(11){
+    left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+  }
+</style>
 
+    <body onload="__ThanhDieuDev()">
+        <div id="__next">
+            <main class="HeadLayout_layout__">
+                <div class="container-fluid">
+                    <div class="_plateContainer__">
+                        <div style="box-shadow: -1px 0px 15px -6px rgb(99, 111, 219);" class="_infoContainer__ widget-content ___bodystyle">
+                                <img class="ThanhDieu_Avatar" src="./_static/img/logo.jpg"/>
+                            <h2 class="ThanhDieu_Name">Lê Trọng Hải Đăng&ensp;<img height="17" width="17" src="./_static/img/vietnam-number-one.gif"></h2>
+                            <h4 class="TieuSu__">I Love Everyone 😘 &ensp;<img style="vertical-align: middle;" height="17" width="17" src="./_static/img/vuong-mien.webp"/></h4>
+                            
+                            <div class="buttons___">
+                                <div class="row-thanhdieu">
+                                   <button onclick="alert('@Follow Facebook Me Pls ?!');setTimeout(function(){window.open('//facebook.com/letronghaidang.limited');}, 123);" class="facebook">
+                                    <span><p style="margin-top: 10px;"><i class="fab fa-facebook"></i></p></span>
+                                   Facebook</button>
+                                </div>
+                                <div class="row-thanhdieu">
+                                   <button onclick="alert('@Contact Zalo Me Pls ?!');setTimeout(function(){window.open('//zalo.me/0325676804');}, 123);" class="facebook">
+                                   <span><p style="margin-top: 10px;"><i class="fab fa-facebook-messenger"></i></p></span>
+                                   Zalo</button>
+                                </div>
+                              </div>
+                              <div class="buttons___">
+                                <div class="row-thanhdieu">
+                                  <button onclick="alert('@Thanks for using tools !!'); window.location.href = 'tool';" class="facebook">
+                                    <span><p style="margin-top: 10px;"><iconify-icon icon="uiw:download"></iconify-icon></p></span>
+                                   Tools</button>
+                                </div>
+                                <div class="row-thanhdieu">
+                                  <button onclick="alert('@Welcome to website fakebill !!'); window.location.href = '//dvfakebillbyhd.000webhostapp.com/';" class="facebook">
+                                  <span>
+                                  <p style="margin-top: 10px;"><iconify-icon icon="guidance:bank"></iconify-icon></p>
+                                  </span>
+                                  Fake Bill
+                                  </button>
+                                
+                                </div>
+                              </div>
+                            <div class="Hr_tdtv"></div>                                                  
+                       <!-- <div class="Facebook_Tdtv" >
+                            <button type="button" class="button_facebook">
+                                <span class="button_facebook__text">Facebook Contact</span>
+                                <span class="button_facebook__icon">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <br>
+                        <div class="Facebook_Tdtv" >
+                            <button type="button" class="button_messager">
+                                <span class="button_messager__text">Messenger Contact</span>
+                                <span class="button_messager__icon">
+                                    <i class='fab fa-facebook-messenger'></i>
+                                </span>
+                            </button>
+                        </div>-->
+                        <style>
+                          @keyframes color-change {
+                          0% { color: red; }
+                          50% { color: blue; }
+                          100% { color: green; }
+                          }
+                          
+                          .colorful-text {
+                          animation: color-change 3s infinite;
+                          }
+                        </style>
+                            <div class="Descriptions____">
+                                <span class="DetailText__">
+                                    <b style="font-size: 17px;color: rgb(201, 201, 201);" class="colorful-text">&mdash; Information Payment &mdash;</b>
+                                </span>
+                            </div>
+                            <div class="grid w-full cardsContainer__">
+                                <div class="col col-12 col-md-6">
+                                    <div class="infoCard__ ___bodystylecard">
+                                        <img style="margin-top: 18px;" height="42" width="42" src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png"/>
+                                        <u style="margin-top: 5px;" class="STK__">&ensp;Momo Payment&ensp;</u>
+                                        <span onclick="copyText('0866467353');stk();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 0866467353 <img height="15" width="15" src="./_static/img/trai-tim.gif"/></span>
+                                        <span onclick="copyText('Lê Trọng Hải Đăng');chutaikhoan();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: Lê Trọng Hải Đăng <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6">
+                                    <div class="infoCard__ ___bodystylecard">
+                                        <img style="margin-top: 4px" height="60" width="137" src="./_static/img/logo-mbbank.png"/>
+                                        <u style="margin-top: -5px;" class="STK__">&ensp;Mb Bank&ensp;</u>
+                                        <span onclick="copyText('19999999999099');stk();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 19999999999099 <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
+                                        <span onclick="copyText('LE TRONG HAI DANG');chutaikhoan();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: LE TRONG HAI DANG <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6">
+                                    <div class="infoCard__ ___bodystylecard">
+                                        <img style="margin-top: 4px" height="60" width="137" src="./_static/img/Techcombank_logo.png"/>
+                                        <u style="margin-top: -5px;" class="STK__">&ensp;Techcombank&ensp;</u>
+                                        <span onclick="copyText('19999999999099');stk();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 19999999999099 <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
+                                        <span onclick="copyText('LE TRONG HAI DANG');chutaikhoan();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: LE TRONG HAI DANG <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__Footer__">
+                        <span class="Footer__">
+                            All rights reserved<span class="startFreeText__">— </span><span class="colorful-text">HaiDangVipPro</span>
+                        </span>
+                    </div>
+                </div>
+            </main>
+        </div>
+<style>
+  .logo {
+  width: 100px; 
+  height: 100px; 
+  }
+</style>
+     <script>
+function copyText(textToCopy) {
+    var CopyTextarea = document.createElement("textarea");
+    CopyTextarea.textContent = textToCopy;
+    document.body.appendChild(CopyTextarea);
+    CopyTextarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(CopyTextarea);
+}
+  function chutaikhoan() {
+  Toastify({
+      text: "Đã copy chủ tài khoản vào bộ nhớ tạm",
+      duration: 4200,
+      backgroundColor: "green"
+    }).showToast();
+    return;
+}
+function stk() {
+  Toastify({
+      text: "Đã copy số tài khoản vào bộ nhớ tạm",
+      duration: 4200,
+      backgroundColor: "green"
+    }).showToast();
+    return;
+}
+function __ThanhDieuDev() {thanhdieunoti();}
+function thanhdieunoti() {
+  swal({
+    content: {
+      element: "div",
+      attributes: {
+        innerHTML: `
+          <h2 class="text-danger">Welcome To My Website</h2>
+          <img src="./_static/img/i-love-u.gif" alt="" class="logo">
+        `,
+      },
+    },
+    buttons: {
+      confirm: {
+        text: "OK",
+        className: "swal-button swal-button--confirm",
+      },
+    },
+  });
+}
+  </script>
+            <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const moneyInput = document.querySelector(".payment-form__money");
+              const qrCodeButton = document.querySelector(".payment-form__transfer");
+              const bankElement = document.getElementById("payment-account__bank");
+              const ctkElement = document.getElementById("payment-account__ctk");
+              const stkElement = document.getElementById("payment-account__stk");
+              const newAmountElement = document.getElementById("new-amount");
+              const qrCodeImage = document.getElementById("qr-code-image");
+              let money; // Khai báo biến money để lưu giá trị của số tiền nhập vào
+
+              moneyInput.addEventListener("input", function () {
+                money = parseFloat(this.value); // Lưu giá trị số tiền nhập vào vào biến money
+                if (isNaN(money) || money <= 0) {
+                  qrCodeButton.classList.add("disabled");
+                } else {
+                  qrCodeButton.classList.remove("disabled");
+                }
+              });
+
+              qrCodeButton.addEventListener("click", function () {
+                if (qrCodeButton.classList.contains("disabled")) {
+                  return;
+                }
+
+                if (isNaN(money) || money <= 0) {
+                  return;
+                }
+
+                // Lựa chọn ngân hàng
+                const selectedBank = document.getElementById("bank-selector").value;
+                let bank, stk;
+                if (selectedBank === "MB") {
+                  bank = "MB";
+                  stk = "19999999999099";
+                } else if (selectedBank === "TechcomBank") {
+                  bank = "TechcomBank";
+                  stk = "19999999999099";
+                }
+                // Thêm các ngân hàng khác ở đây
+
+                const ctk = "LE TRONG HAI DANG";
+                const note = "donate";
+                const formattedMoney = money.toLocaleString();
+
+                bankElement.textContent = bank;
+                ctkElement.textContent = ctk;
+                stkElement.textContent = stk;
+                newAmountElement.textContent = formattedMoney;
+
+                const qrCodeUrl = `https://api.vietqr.io/${encodeURIComponent(bank)}/${encodeURIComponent(stk)}/${encodeURIComponent(money)}/${encodeURIComponent(note)}/qOr8JLa.jpg?accountName=${encodeURIComponent(ctk)}`;
+
+                qrCodeImage.src = qrCodeUrl;
+              });
+
+              document.getElementById("copy-amount").addEventListener("click", function () {
+                const textToCopy = newAmountElement.textContent;
+                copyToClipboard(textToCopy);
+              });
+
+              function copyToClipboard(text) {
+                const tempInput = document.createElement("textarea");
+                tempInput.style.position = "absolute";
+                tempInput.style.left = "-9999px";
+                tempInput.style.top = "0";
+                tempInput.value = text;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+              }
+            });
+          </script>
+  <script src="//haidang-coder.neocities.org/music.js" data-n-g='{"made": "Haidangvippro"}'></script>
+  <script type='text/javascript'> ! function (e, t, a) { function n() { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="click.js"></script>
+  <script src="chuot.js"></script>
+  <script src="./_static/js/sfs.js"></script>
+  <script src="./_static/js/antif12.js"></script>
+  <script>
+    ((function() {
+    var a = [],
+        b = 50,
+        c = false;
+    setInterval(loop, 1);
+    return {
+        addListener: function(art) {
+            a["push"](art);
+        },
+        cancleListenr: function(aL5) {
+            a = a["filter"](function(v) {
+                return v !== aL5;
+            });
+        }
+    };
+
+    function loop() {
+        var Env = new window["Date"]();
+        debugger;
+        if (new window["Date"]() - Env > b) {
+            if (!c) {
+                a["forEach"](function(checked) {
+                    checked["call"](null);
+                });
+            }
+            c = true;
+            window["stop"]();
+            window["alert"]('\u004e\u1ebf\u0075\u0020\u006b\u0068\u00f4\u006e\u0067\u0020\u0063\u00f3\u0020\u0073\u1ef1\u0020\u0063\u0068\u006f\u0020\u0070\u0068\u00e9\u0070\u002c\u0020\u006e\u0067\u0068\u0069\u00ea\u006d\u0020\u0063\u1ea5\u006d\u0020\u006c\u1ea5\u0079\u0020\u006d\u00e3\u0020\u006e\u0067\u0075\u1ed3\u006e\u0020\u0062\u1eb1\u006e\u0067\u0020\u006d\u1ecd\u0069\u0020\u0063\u00e1\u0063\u0068\u002e\u0020\u0043\u1ea3\u006d\u0020\u01a1\u006e\u0020\u0073\u1ef1\u0020\u0068\u1ee3\u0070\u0020\u0074\u00e1\u0063\u0020\u0063\u1ee7\u0061\u0020\u0062\u1ea1\u006e\u0021');
+            document.documentElement.innerHTML = '\u0056\u0069\u1ec7\u0063\u0020\u0111\u00e1\u006e\u0068\u0020\u0063\u1eaf\u0070\u0020\u0076\u00e0\u0020\u0073\u1eed\u0020\u0064\u1ee5\u006e\u0067\u0020\u006d\u00e3\u0020\u006d\u00e0\u0020\u006b\u0068\u00f4\u006e\u0067\u0020\u0111\u01b0\u1ee3\u0063\u0020\u0070\u0068\u00e9\u0070\u0020\u0111\u1ec1\u0075\u0020\u0062\u1ecb\u0020\u006e\u0067\u0068\u0069\u00ea\u006d\u0020\u0063\u1ea5\u006d\u002e';
+        } else {
+            c = false;
+        }
+    }
+})())["addListener"](function() {
+    window["location"]["reload"]();
+});
+window["document"]["oncontextmenu"] = function() {
+    return false;
+};
+window["document"]["onselectstart"] = function() {
+    return false;
+}; 
+document.οncοntextmenu=function(){return false;};document.onselectstart=function(){return false;};let h = window.innerHeight;let w = window.innerWidth;document.oncontextmenu = function () { return false; };window.onkeydown = window.onkeyup = window.onkeypress = function () {window.event.returnValue = false;return false;};document.onkeydown = function () {if (window.event && window.event.keyCode == 123) {event.keyCode = 0;event.returnValue = false;return false;}};window.onresize = function () {if (h != window.innerHeight || w != window.innerWidth) {window.close();window.location = "about:blank";}};
+</script>
+    </body>
 </html>
