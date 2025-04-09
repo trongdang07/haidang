@@ -3,17 +3,13 @@ const mapping = {
   '%E8%BD%A6%E7%A5%A8%E7%A5%A8': ['vip+watch_vip'],
   'Locket': ['Gold']
 };
+// =========   Phần cố định  ========= // 
+// =========  @DuongVanSy ========= // 
+var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
+    obj = JSON.parse($response.body);
 
-// ========= Phần cố định ========= //
-// ========= @DuongVanSy ========= //
-
-var ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
-var obj = JSON.parse($response.body);
-
-// Thông báo người dùng
 obj.Attention = "Chúc mừng bạn! Vui lòng không bán hoặc chia sẻ cho người khác!";
 
-// Định nghĩa dữ liệu giả lập
 var dvsteam = {
   is_sandbox: false,
   ownership_type: "PURCHASED",
@@ -29,12 +25,11 @@ var dvsteam = {
 
 var dvsteam_subscription = {
   grace_period_expires_date: null,
-  purchase_date: "2007-09-30T09:45:00Z",
+  purchase_date: "2024-11-11T09:45:00Z",
   product_identifier: "com.dvsteam.premium.yearly",
   expires_date: "2099-12-18T01:04:17Z"
 };
 
-// Kiểm tra User-Agent và ánh xạ quyền
 const match = Object.keys(mapping).find(e => ua.includes(e));
 if (match) {
   let [entitlement, product] = mapping[match];
@@ -50,5 +45,4 @@ if (match) {
   obj.subscriber.entitlements.pro = dvsteam_subscription;
 }
 
-// Trả về kết quả
 $done({ body: JSON.stringify(obj) });
